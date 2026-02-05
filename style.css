@@ -9,62 +9,117 @@ body {
   font-family: sans-serif;
   font-size: 11pt;
   line-height: 15pt;
+  background-color: #DCDCDC;
 }
 
 h1 {
   text-align: center;
-  font-size: 13pt;
+  font-size: 20pt;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-table {
-  width: 600px;
+/*table {
+  width: 580px;
   margin: auto;
   margin-top: 10px;
   text-align: left;
+}*/
+
+table, tr, td, th { 
+  border-collapse: collapse;
+  padding: 5px;
 }
 
-table, tr, td, th {
-  border: 1px dotted black;
-  border-collapse: collapse;
+td {
+  letter-spacing: 0.06em;
+  line-height: 1.8;
   padding: 10px;
 }
 
-
-
-.circle {
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #d8c9f2;
-    color: #000;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-}
-
-.tb2_title {
-  background-color: #c69f9f;
-}
-
-.tb5_title {
-  background-color: #EEE8AA;
-}
-
-.b2_width {
-  width: 240px;
-}
-
-
 th {
   font-weight: bold;
-  background-color: ;
 }
 
-li {
-  margin-left: 20px;
+table.bio {
+  width: 500px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
+
+/*3열 고정 비율*/
+table.bio .col-label { width: 22%; }
+table.bio .col-mainL { width: 18%; }
+table.bio .col-mainR { width: 36%; }
+table.bio .col-tail { width: 24%; }
+
+/*공통 셀*/
+ table.bio th, 
+ table.bio td {
+  /*border: 1px solid black;*/
+  padding: 10px;
+  vertical-align: top;
+ } 
+
+ /*섹션 헤더 줄*/
+ table.bio tr.section th {
+  /*border: 1px solid black;*/
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  padding: 12px 10px;
+  text-align: left;
+ }
+
+ table.bio tr.spacer td {
+    height: 28px;
+  }
+ 
+/*왼쪽 라벨*/
+ table.bio td.label {
+  white-space: nowrap;
+  border-bottom: 1px dotted black;
+ }
+
+/*가운데 본문*/
+ table.bio td.main {
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  border-bottom: 1px dotted black;
+ }
+
+/*오른쪽 꼬리 문장 박스*/
+ table.bio td.tail {
+  white-space: nowrap;
+  vertical-align: bottom;
+  border-bottom: 1px dotted black;
+ }
+
+ table.bio tr.zig-row td {
+  border-bottom: 1px dotted black;
+ }
+
+ table.bio tr.footer-section th {
+  border-bottom: none;
+  /*border-top: 1px solid black;*/
+}
+
+.highlight {
+  background-color: #bfbfbf;
+  /*padding: 2px 6px;*/
+  /*border-radius: 2px;*/
+
+}
+
+.highlight a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.highlight a:hover {
+  text-decoration: underline;
+}
+
 
 footer {
   font-size: 9pt;
