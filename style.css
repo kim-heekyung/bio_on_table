@@ -19,12 +19,12 @@ h1 {
   margin-bottom: 50px;
 }
 
-/*table {
-  width: 580px;
-  margin: auto;
-  margin-top: 10px;
-  text-align: left;
-}*/
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 500px;
+}
 
 table, tr, td, th { 
   border-collapse: collapse;
@@ -100,7 +100,7 @@ table.bio .col-tail { width: 24%; }
  }
 
  table.bio tr.footer-section th {
-  border-bottom: none;
+  /*border-bottom: none;*/
   /*border-top: 1px solid black;*/
 }
 
@@ -114,10 +114,53 @@ table.bio .col-tail { width: 24%; }
 .highlight a {
   text-decoration: none;
   color: inherit;
+  text-decoration: underline;
 }
 
 .highlight a:hover {
   text-decoration: underline;
+}
+
+/* ===== 그밖에: 벽돌 테이블 ===== */
+
+table.bio td.brick-wrap {
+  padding: 0;           /* 바깥 큰 테이블의 padding 제거해서 벽돌이 깔끔히 붙게 */
+  border-bottom: none;  /* 점선 충돌 방지(원하면 삭제) */
+}
+
+table.brick {
+  width: 500px;         /* table.bio와 동일 폭 */
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.brick td {
+  height: 42px;                 /* 벽돌 높이 */
+  padding: 8px 10px;
+  border: 1px dotted #000;  
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  /* 기본 배경(빈칸도 벽돌처럼 보이게) */
+  /*background: rgba(255,255,255,0.35);*/
+}
+
+
+table.brick {
+  text-align: center;
+}
+
+/* 벽돌 표의 첫 번째 row 위쪽 점선 제거 */
+table.brick tr:first-child td {
+  border-top: none;
+}
+
+table.brick tr td {
+  /*border-left: none;*/
+  /*border-right: none;*/
 }
 
 
