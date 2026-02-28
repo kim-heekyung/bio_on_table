@@ -42,8 +42,8 @@ th {
 }
 
 table.bio {
-  /*width: 500px;*/
-  width: 100%;
+  width: 500px;
+  /*width: 100%;*/
   margin: 0 auto;
   border-collapse: collapse;
   table-layout: fixed;
@@ -75,7 +75,6 @@ table.bio .col-tail { width: 24%; }
     height: 28px;
   }
  
-
  table.bio td.label {
   white-space: nowrap;
   border-bottom: 1px dotted black;
@@ -127,8 +126,8 @@ table.bio td.brick-wrap {
 }
 
 table.brick {
-  /*width: 500px;         */
-  width: 100%;
+  width: 500px;         
+  /*width: 100%;*/
   margin: 0 auto;
   table-layout: fixed;
   border-collapse: collapse;
@@ -147,7 +146,6 @@ table.brick td {
 table.brick {
   text-align: center;
 }
-
 
 table.brick tr:first-child td {
   border-top: none;
