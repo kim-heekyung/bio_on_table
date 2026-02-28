@@ -42,11 +42,13 @@ th {
 }
 
 table.bio {
-  width: 500px;
+  /*width: 500px;*/
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   table-layout: fixed;
 }
+
 
 table.bio .col-label { width: 22%; }
 table.bio .col-mainL { width: 18%; }
@@ -125,7 +127,8 @@ table.bio td.brick-wrap {
 }
 
 table.brick {
-  width: 500px;         
+  /*width: 500px;         */
+  width: 100%;
   margin: 0 auto;
   table-layout: fixed;
   border-collapse: collapse;
@@ -163,7 +166,7 @@ footer {
 @media screen and (max-width: 704px) {
 
   table.bio {
-  width: 480px;
+  max-width: 480px;
   }
 
 
